@@ -24,6 +24,7 @@ $section-three-color: #7b655f;
 body {
     font-family: 'Roboto', sans-serif;
     background-color: $bmain-color;
+    user-select: none;
 }
 
 html {
@@ -46,7 +47,7 @@ button {
 }
 
 .forecast {
-    width: 80vw;
+    width: 90vw;
     max-width: $max-width-container;
     margin: 20px auto;
 }

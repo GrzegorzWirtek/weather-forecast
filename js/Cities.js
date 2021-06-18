@@ -389,7 +389,6 @@ export const CITIES = [
         'Lututów',
         'Lwówek',
         'Lwówek Śląski',
-        'Plac Wolności –',
         'Łabiszyn',
         'Łagów',
         'Łańcut',
