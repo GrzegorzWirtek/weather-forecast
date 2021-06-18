@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #46344e;
+  background-color: #152937;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -193,7 +193,7 @@ button {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   padding: 5px 0;
-  color: #FAED26;
+  color: #f2ef50;
 }
 
 .forecast__main-section {
@@ -210,7 +210,7 @@ button {
           justify-content: center;
   padding: 10px;
   margin-bottom: 10px;
-  background-color: #5a5560;
+  background-color: #255D85;
 }
 
 .forecast__main-section-left {
@@ -271,7 +271,7 @@ button {
   width: 100%;
   padding: 10px 0;
   margin-bottom: 10px;
-  background-color: #877375;
+  background-color: #5A7385;
 }
 
 @media (min-width: 650px) {
@@ -325,7 +325,7 @@ button {
           align-items: center;
   padding: 10px 0;
   margin-bottom: 10px;
-  background-color: #7b655f;
+  background-color: #6d4d3f;
 }
 
 @media (min-width: 650px) {
