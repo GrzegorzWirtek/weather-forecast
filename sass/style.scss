@@ -339,3 +339,34 @@ button {
 .forecast__params-section-left-humidity-icon {
     background-image: url('../assets/humidity.png');
 }
+
+// ----- Map -----
+
+.forecast__map {
+    position: relative;
+    width: 100%;
+    background-color: $section-two-color;
+}
+
+.forecast__map-img {
+    width: 100%;
+}
+
+.forecast__map-copyright {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-weight: 300;
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+
+.forecast__map-element {
+    position: absolute;
+    display: flex;
+}
+
+.warszawa {
+    top: 45%;
+    left: 65%;
+}
