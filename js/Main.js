@@ -1,3 +1,4 @@
+import { countryMap } from './CountryMap.js';
 import { GetApi } from './GetApi.js'
 import { CITIES } from './Cities.js'
 
@@ -8,6 +9,7 @@ const PROPOSITIONS_ITEM =  'forecast__search-propositions-item';
 class Main{
     constructor(){
         this.getInformation();
+        this.getInformationToMap();
         this.propositions = document.querySelector(PROPOSITIONS_CLASS);
         this.input = document.querySelector(INPUT_CLASS);
         
@@ -18,6 +20,10 @@ class Main{
     getInformation(city = "warszawa"){
         this.getApi = new GetApi();
         this.getApi.getFromApi(city);
+    }
+
+    getInformationToMap(){
+        countryMap.getApiToMap();
     }
 
     searchCity(e){  

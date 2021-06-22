@@ -68,7 +68,6 @@ button {
     width: 100px;
     height: 100px;
     animation: loader 2s linear infinite;
-    // animation-play-state: paused;
 }
 
 .loader__text {
@@ -132,7 +131,7 @@ button {
 
 .forecast-header-source {
     font-weight: 300;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     text-align: right;
     margin: 5px auto;
     opacity: 0.7;
@@ -177,7 +176,6 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    margin: $main-margin * 2 auto;
 }
 
 .forecast__city-name {
@@ -354,19 +352,50 @@ button {
 
 .forecast__map-copyright {
     position: absolute;
-    bottom: 5px;
-    left: 5px;
+    bottom: -16px;
+    right: 0px;
     font-weight: 300;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     opacity: 0.7;
 }
 
 .forecast__map-element {
     position: absolute;
     display: flex;
+    flex-wrap: wrap;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.forecast__map-temp,
+.forecast__map-temp-span,
+.forecast__map-city {
+    font-size: 0.6rem;
+}
+
+.forecast__map-city {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.forecast__map-icon {
+    width: 18px;
+    height: 18px;
+    background-image: url("https://openweathermap.org/img/wn/10d@2x.png");
+    background-repeat: no-repeat;
+    background-size: 170%;
+    background-position: center;
+    overflow: hidden;
+    margin-right: 5px;
 }
 
 .warszawa {
-    top: 45%;
-    left: 65%;
+    top: 40%;
+    left: 60%;
+}
+
+.lodz {
+    top: 53%;
+    left: 43%;
 }

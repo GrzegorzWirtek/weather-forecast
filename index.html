@@ -18,6 +18,7 @@
             </nav>
             <p class="forecast-header-source">Źródło: openweathermap.org</p>
         </header>
+
         <article class="forecast__article">
             <h2 class="forecast__city-name"></h2>
             <section class="forecast__main-section">
@@ -68,14 +69,24 @@
         </article>
         <article class="forecast__map">
             <p class="forecast__map-copyright">Copyright &copy freevectormaps.com</p>
-            <img src="assets/map1.png" class="forecast__map-img" alt="">
+            <img src="assets/map.png" class="forecast__map-img" alt="">
+
             <div class="forecast__map-element warszawa">
-                <div class="forecast__map-icon"></div>
+                <div class="forecast__map-icon icon-warszawa"></div>
                 <p class="forecast__map-temp">
-                    <span class="forecast__map-temp-span">20</span>
+                    <span class="forecast__map-temp-span temp-warszawa">20</span>
                     &degC</p>
                 <p class="forecast__map-city">Warszawa</p>
             </div>
+
+            <div class="forecast__map-element lodz">
+                <div class="forecast__map-icon icon-lodz"></div>
+                <p class="forecast__map-temp">
+                    <span class="forecast__map-temp-span temp-lodz">20</span>
+                    &degC</p>
+                <p class="forecast__map-city">Łódź</p>
+            </div>
+
         </article>
     </main>
     <div class="loader">
