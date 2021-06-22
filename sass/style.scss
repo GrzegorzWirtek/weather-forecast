@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 $max-width-container: 800px;
-$min-width: 650px;
+$min-width: 600px;
 $main-padding: 10px;
 $main-margin: 15px;
 $input-height: 40px;
@@ -54,7 +54,7 @@ button {
     width: 100%;
     height: 100%;
     background-color: rgba(102, 102, 102, 0.453);
-    display: none;
+    // display: none;
 }
 
 .loader__element {
@@ -95,6 +95,7 @@ button {
     width: 90vw;
     max-width: $max-width-container;
     margin: 20px auto;
+    filter: blur(3px);
 }
 
 .forecast__header-txt {
@@ -387,6 +388,10 @@ button {
 .forecast__map-city {
     font-size: 0.5rem;
 
+    @media (min-width: 500px) {
+        font-size: 0.7rem;
+    }
+
     @media (min-width: $min-width) {
         font-size: 0.8rem;
     }
@@ -398,14 +403,21 @@ button {
 }
 
 .forecast__map-icon {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     background-image: url("https://openweathermap.org/img/wn/10d@2x.png");
     background-repeat: no-repeat;
-    background-size: 170%;
+    background-size: 150%;
     background-position: center;
     overflow: hidden;
-    margin-right: 3px;
+    margin-right: 2px;
+
+    @media (min-width: 500px) {
+        background-size: 150%;
+        width: 30px;
+        height: 30px;
+        margin-right: 3px;
+    }
 
     @media (min-width: $min-width) {
         background-size: 150%;

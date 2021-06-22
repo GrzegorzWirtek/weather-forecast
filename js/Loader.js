@@ -12,7 +12,7 @@ class Loader{
     }
 
     startLoader(){
-        this.forecast.style.filter = 'blur(2px)';
+        this.forecast.style.filter = 'blur(3px)';
         this.loaderWrapper.style.display = 'block';
         this.loader.style.animationPlayState = 'running';
     }
