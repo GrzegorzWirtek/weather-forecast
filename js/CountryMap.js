@@ -2,7 +2,15 @@ import { GetMapApi } from './GetMapApi.js'
 
 const CITIES_ON_MAP = [
     'warszawa',
-    'lodz'
+    'lodz',
+    'bialystok',
+    'bydgoszcz',
+    'gdansk',
+    'szczecin',
+    'wroclaw',
+    'poznan',
+    'krakow',
+    'lublin'
 ];
 
 const CITIES_TEMP = document.querySelectorAll('.forecast__map-temp-span');
@@ -16,13 +24,11 @@ class CountryMap{
     viewMap(data){ 
        CITIES_TEMP.forEach((element, index)=>{
            if(element.classList.contains(`temp-${data.cityWithoutSigns}`)){
-               element.textContent = data.temp.toFixed(1);
+               element.textContent = data.temp.toFixed();
                CITIES_ICON[index].style.backgroundImage = `url(${data.iconUrl})`;         
            }
        })
-       
-        
     }
-}
+};
 
 export const countryMap = new CountryMap();

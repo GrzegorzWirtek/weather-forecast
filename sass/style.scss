@@ -10,10 +10,11 @@ $icon-size: 80px;
 $border-color: #aaa;
 $hover-color: #faf5ad;
 $city-color: #f2ef50;
-$bmain-color: #152937;
+$main-color: #152937;
 $section-one-color: #255D85;
 $section-two-color: #5A7385;
 $section-three-color: #6d4d3f;
+$section-map-color: #767bb1;
 
 * {
     margin: 0;
@@ -23,7 +24,7 @@ $section-three-color: #6d4d3f;
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: $bmain-color;
+    background-color: $main-color;
     user-select: none;
 }
 
@@ -131,10 +132,14 @@ button {
 
 .forecast-header-source {
     font-weight: 300;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     text-align: right;
-    margin: 5px auto;
+    margin: 3px auto;
     opacity: 0.7;
+
+    @media (min-width: $min-width) {
+        font-size: 0.6rem;
+    }
 }
 
 .forecast__search-propositions {
@@ -343,7 +348,7 @@ button {
 .forecast__map {
     position: relative;
     width: 100%;
-    background-color: $section-two-color;
+    background-color: $section-map-color;
 }
 
 .forecast__map-img {
@@ -355,8 +360,12 @@ button {
     bottom: -16px;
     right: 0px;
     font-weight: 300;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     opacity: 0.7;
+
+    @media (min-width: $min-width) {
+        font-size: 0.6rem;
+    }
 }
 
 .forecast__map-element {
@@ -366,12 +375,21 @@ button {
     width: 70px;
     justify-content: center;
     align-items: center;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: $min-width) {
+        width: 100px;
+    }
 }
 
 .forecast__map-temp,
 .forecast__map-temp-span,
 .forecast__map-city {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
+
+    @media (min-width: $min-width) {
+        font-size: 0.8rem;
+    }
 }
 
 .forecast__map-city {
@@ -380,22 +398,78 @@ button {
 }
 
 .forecast__map-icon {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     background-image: url("https://openweathermap.org/img/wn/10d@2x.png");
     background-repeat: no-repeat;
     background-size: 170%;
     background-position: center;
     overflow: hidden;
-    margin-right: 5px;
+    margin-right: 3px;
+
+    @media (min-width: $min-width) {
+        background-size: 150%;
+        width: 33px;
+        height: 33px;
+    }
 }
 
 .warszawa {
-    top: 40%;
-    left: 60%;
+    top: 46%;
+    left: 70%;
 }
 
 .lodz {
-    top: 53%;
-    left: 43%;
+    top: 54%;
+    left: 54%;
+}
+
+.bialystok {
+    top: 31%;
+    left: 90%;
+}
+
+.bydgoszcz {
+    top: 30%;
+    left: 40%;
+}
+
+.gdansk {
+    top: 9%;
+    left: 46%;
+}
+
+.szczecin {
+    top: 25%;
+    left: 8%;
+}
+
+.poznan {
+    top: 44%;
+    left: 28%;
+}
+
+.wroclaw {
+    top: 64%;
+    left: 28%;
+}
+
+.krakow {
+    top: 81%;
+    left: 60%;
+}
+
+.lublin {
+    top: 62%;
+    left: 85%;
+}
+
+// ----- Footer -----
+
+.footer {
+    width: 90vw;
+    max-width: $max-width-container;
+    margin: 50px auto 20px auto;
+    text-align: center;
+    font-size: 0.7rem;
 }
