@@ -1,6 +1,7 @@
 import { countryMap } from './CountryMap.js';
-import { GetApi } from './GetApi.js'
-import { CITIES } from './Cities.js'
+import { GetApi } from './GetApi.js';
+import { CITIES } from './Cities.js';
+import { charReplacement } from './CharReplacement.js';
 
 const INPUT_CLASS = '.forecast__search-input';
 const PROPOSITIONS_CLASS = '.forecast__search-propositions';
@@ -27,9 +28,9 @@ class Main{
     }
 
     searchCity(e){  
-        let value = e.target.value.toLowerCase();
+        let value = charReplacement.replacement(e.target.value.toLowerCase());
         let cities = CITIES;
-        cities = cities.filter((city)=>city.toLowerCase().startsWith(value));      
+        cities = cities.filter((city)=>charReplacement.replacement(city.toLowerCase()).startsWith(value));      
         if(cities.length > 5){      
             cities = cities.slice(0, 5);
         }
