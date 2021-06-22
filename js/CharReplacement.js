@@ -3,7 +3,7 @@ class CharReplacement{
         word = word.replace("ą", "a");
         word = word.replace("ć", "c");
         word = word.replace("ę", "e");
-        word = word.replace("ł", "e");
+        word = word.replace("ł", "l");
         word = word.replace("ń", "n")
         word = word.replace("ó", "o");
         word = word.replace("ś", "s");
