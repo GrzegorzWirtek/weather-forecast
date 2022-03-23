@@ -1,19 +1,18 @@
 # Weather forecast app
 
-Web application that uses public API to display the current weather in selected Polish cities. Created with vanila JavaScript, HTML and CSS.
+Web application that uses public API to display the current weather in selected Polish cities. Created with vanila JavaScript, HTML and SCSS.
 
 Visit page: **[Weather forecast](https://grzegorzwirtek.github.io/weather-forecast/)**
 
 ## General info
 
-Project displaying the current weather in selected cities in Poland. Created with vanila, object oriented JavaScript, HTML and CSS, using the Sass precompressor. The application gets data from the public API of [openweathermap.org](https://openweathermap.org/). In order to hide the secret key with .env, Webpack was used. A project created to practice fetching data from API and using Webpack.
+Project displaying the current weather in selected cities in Poland. Created with vanila, object oriented JavaScript, HTML and SCSS, using the Sass precompressor. The application gets data from the public API of [openweathermap.org](https://openweathermap.org/). In order to hide the secret key with .env, Webpack was used. A project created to practice fetching data from API and using Webpack.
 
 ## Technologies
 
 Project is created with:
 
 - **HTML5**
-- **CSS**
 - **SASS/SCSS**
 - **JavaScript**
 - **dotenv-webpack** version 7.1.0
