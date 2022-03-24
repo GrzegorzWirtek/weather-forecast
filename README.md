@@ -13,7 +13,7 @@ Project displaying the current weather in selected cities in Poland. Created wit
 Project is created with:
 
 - **HTML5**
-- **SASS/SCSS**
+- **SCSS**
 - **JavaScript**
 - **dotenv-webpack** version 7.1.0
 - **@babel/core** version 7.4.5
